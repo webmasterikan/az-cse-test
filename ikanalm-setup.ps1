@@ -74,7 +74,7 @@ cmd.exe /C copy "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Stu
 Invoke-Expression -Command:$commandVS
 
 $commandGuide = @'
-cmd.exe /C copy "C:\temp\Guide.lnk" %USERPROFILE%\Desktop
+cmd.exe /C copy "C:\temp\Guide.url" %USERPROFILE%\Desktop
 '@
 Invoke-Expression -Command:$commandGuide
 
