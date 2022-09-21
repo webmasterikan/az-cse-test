@@ -73,6 +73,11 @@ cmd.exe /C copy "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Stu
 '@
 Invoke-Expression -Command:$commandVS
 
+$commandGuide = @'
+cmd.exe /C copy "C:\temp\Guide.lnk" %USERPROFILE%\Desktop
+'@
+Invoke-Expression -Command:$commandGuide
+
 
 <#
 --- Register and import the distro
